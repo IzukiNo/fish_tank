@@ -1,0 +1,69 @@
+body {
+    background-image: url("background.png");
+  }
+
+img{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+}
+
+.Ca1{
+    animation: ca2dichuyen 6.5s ease-in-out infinite;
+}
+.Ca2{
+    animation: ca1dichuyen 6.5s ease-in-out infinite;
+}
+.Ca3{
+    animation: ca3dichuyen 6.5s ease-in-out infinite;
+}
+.Ca4{
+    animation: Swim 6.5s ease-in-out infinite;
+}
+
+@keyframes Swim{
+    0% {left: 100px;top: 400px;}
+    20% {left: 300px;top: 400px;}
+    40% {left: 500px;top: 300px;}
+    50% {left: 600px;top: 50px;}
+    60% {left: 600px;top: 100px;}
+    80% {left: 500px;top: 200px;}
+    100% {left: 100px;top: 400px;transform:scaleX(-1)}
+}
+
+@keyframes ca1dichuyen{
+    0% {top:20%;transform: scaleX(1); }
+    40% {left: 90%; transform: scaleX(1);}
+    75%{top: 50%;transform: scaleX(-1);}
+    100% {top:20%;transform: scaleX(1); }
+}
+
+#ca1{
+    animation: ca1dichuyen 6.5s ease-in-out infinite;
+}
+
+
+@keyframes ca2dichuyen{
+    0%{left:20%;transform: scaleX(1); }
+    30%{left:60%;transform: scaleX(-1); }
+    70%{top:60%;transform: scaleX(1);}
+    100%{left:20%;transform: scaleX(1);}
+}
+
+#ca2{
+    animation: ca2dichuyen 8s ease-in-out infinite;
+}
+
+
+@keyframes ca3dichuyen{
+    0%{bottom:10%;transform: scaleX(1)}
+    30%{right:50%;transform: scaleX(1)}
+    60%{right:59%;transform: scaleX(-1);}
+    90%{bottom: 30%;transform: scaleX(-1);}
+    100%{bottom: 10%;transform: scaleX(1);}
+
+}
+
+#ca3{
+    animation: infinite ease-in-out 12s ca3dichuyen;
+}
